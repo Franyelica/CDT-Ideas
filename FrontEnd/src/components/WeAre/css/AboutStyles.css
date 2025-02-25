@@ -1,0 +1,62 @@
+.about {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.about-container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-title h2 {
+    font-size: 2.5rem;
+    /* Tamaño de fuente ajustado a 5xl en tu código */
+    font-weight: bold;
+}
+
+.about-description {
+    font-size: 1.8rem;
+    padding: 24px 0;
+    color: #7c7c7c;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 2px;
+    text-align: center;
+}
+
+.about-item {
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    padding: 32px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item p {
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: #7c3aed;
+    margin-top: 12px;
+}
+
+.about-item .text-gray-400 {
+    color: #a3a3a3;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 0 2px;
+        text-align: center;
+    }
+}

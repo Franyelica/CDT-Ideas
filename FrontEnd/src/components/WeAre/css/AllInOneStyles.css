@@ -1,0 +1,70 @@
+/* En tu archivo CSS */
+
+.platforms {
+    width: 100%;
+    margin-top: 12rem;
+}
+
+.platforms-container {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 2px;
+    /* Ajusta el relleno según tus necesidades */
+}
+
+.platforms-title {
+    font-size: 2.5rem;
+    /* Tamaño de fuente ajustado a 5xl en tu código */
+    font-weight: bold;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.platforms-description {
+    font-size: 1.875rem;
+    /* Tamaño de fuente ajustado a 3xl en tu código */
+    padding: 32px 0;
+    color: #7c7c7c;
+    /* Cambia el color de texto según tus preferencias */
+    text-align: center;
+}
+
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    /* Ajusta el espacio entre las cajas según tus necesidades */
+    padding-top: 4px;
+    /* Ajusta el espacio superior según tus necesidades */
+}
+
+.platform-item {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    /* Otra forma de redondear las esquinas */
+    overflow: hidden;
+    /* Para asegurar que los bordes redondeados se apliquen correctamente */
+    margin-bottom: 16px;
+    /* Ajusta el margen inferior según tus necesidades */
+}
+
+.platform-content {
+    flex: 1;
+    padding: 16px;
+}
+
+.platform-title {
+    font-weight: bold;
+    font-size: 1.125rem;
+    /* Tamaño de fuente ajustado a lg en tu código */
+}
+
+.platform-description {
+    font-size: 1rem;
+    /* Tamaño de fuente ajustado a base en tu código */
+    margin-top: 8px;
+    /* Ajusta el margen superior según tus necesidades */
+    margin-bottom: 4px;
+    /* Ajusta el margen inferior según tus necesidades */
+}

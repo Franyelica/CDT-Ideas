@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Hello {
+  width: 100%;
+  height: auto;
+  /*background: rgb(71, 79, 116);*/
+  background-color: #293377;
+  background: linear-gradient(11deg, rgba(71, 79, 116, 1) 13%, rgba(62, 85, 164, 1) 100%);
+  color: white;
+  /* padding: 20px; */
+}
+
+.Hello h1 {
+  text-align: center;
+  color: white;
+}
+
+.GeneralPatentsList {
+  max-width: 800px;
+  /* Limitar el ancho máximo de la lista */
+  margin: 0 auto;
+  /* Centrar la lista horizontalmente */
+  padding: 20px;
+  /* Agregar espacio alrededor de la lista */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Agregar sombra */
+  border-radius: 8px;
+  /* Agregar bordes redondeados */
+}
+
+.Title {
+  text-align: center;
+  /* Centrar el título */
+  margin-bottom: 20px;
+  /* Agregar espacio entre el título y la lista */
+}
+
+.RouteP {
+  margin-bottom: 20px;
+  /* Agregar espacio entre la ruta y la lista */
+}
+
+.search-container {
+  margin-bottom: 20px;
+  /* Agregar espacio entre el campo de búsqueda y la lista */
+}
+
+.search-container input[type="text"] {
+  width: 90%;
+  /* Hacer que el campo de búsqueda ocupe todo el ancho disponible */
+  padding: 10px;
+  /* Ajustar el espacio dentro del campo de búsqueda */
+  border: 1px solid #ccc;
+  /* Añadir un borde al campo de búsqueda */
+  border-radius: 4px;
+  /* Agregar bordes redondeados al campo de búsqueda */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  margin-right: 10px;
+}
+
+.search-container .search-button {
+  padding: 10px;
+  /* Ajustar el espacio dentro del botón de búsqueda */
+  background-color: #007bff;
+  /* Color de fondo del botón de búsqueda */
+  color: #fff;
+  /* Color del texto del botón de búsqueda */
+  border: none;
+  /* Eliminar el borde del botón de búsqueda */
+  border-radius: 4px;
+  /* Agregar bordes redondeados al botón de búsqueda */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar sobre el botón de búsqueda */
+}
+
+.search-container .search-button:hover {
+  background-color: #0056b3;
+  /* Cambiar el color de fondo al pasar sobre el botón de búsqueda */
+}
+
+.btnNewPatent {
+  padding: 10px 20px;
+  /* Ajustar el espacio dentro del botón */
+  background-color: #28a745;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto del botón */
+  border: none;
+  /* Eliminar el borde del botón */
+  border-radius: 4px;
+  /* Agregar bordes redondeados al botón */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.btnNewPatent:hover {
+  background-color: #218838;
+  /* Cambiar el color de fondo al pasar sobre el botón */
+}
+
+.patent-list {
+  margin-top: 20px;
+  /* Agregar espacio entre el contenido superior y la lista de patentes */
+}
+
+.patent-item,
+.user-item {
+  padding: 10px;
+  /* Ajustar el espacio dentro de cada elemento de la lista */
+  margin-bottom: 10px;
+  /* Agregar espacio entre los elementos de la lista */
+  background-color: #f8f9fa;
+  /* Color de fondo del elemento de la lista */
+  border: 1px solid #dee2e6;
+  /* Añadir un borde alrededor de cada elemento de la lista */
+  border-radius: 4px;
+  /* Agregar bordes redondeados a los elementos de la lista */
+}
+
+.patent-item h3 {
+  margin-bottom: 5px;
+  /* Agregar espacio entre el nombre de la patente y los botones de acción */
+}
+
+.actions {
+  display: flex;
+  /* Mostrar los botones de acción en línea */
+}
+
+.actions button {
+  margin-left: 5px;
+  /* Agregar espacio entre los botones de acción */
+}
+
+.patent-item {
+  display: flex;
+  /* Utilizar flexbox para organizar los elementos */
+  flex-direction: column;
+  /* Organizar los elementos en columnas */
+  padding: 10px;
+  /* Ajustar el espacio dentro de cada elemento de la lista */
+  margin-bottom: 10px;
+  /* Agregar espacio entre los elementos de la lista */
+  background-color: #f8f9fa;
+  /* Color de fondo del elemento de la lista */
+  border: 1px solid #dee2e6;
+  /* Añadir un borde alrededor de cada elemento de la lista */
+  border-radius: 4px;
+  /* Agregar bordes redondeados a los elementos de la lista */
+}
+
+.patent-details,
+.user-details {
+  display: flex;
+  /* Utilizar flexbox para organizar los detalles de la patente */
+  flex-direction: column;
+  /* Organizar los detalles en columnas */
+}
+
+.patent-id,
+.patent-name,
+.user-id,
+.user-name,
+.user-email,
+.user-role {
+  margin-bottom: 5px;
+  /* Agregar espacio entre el ID, el nombre y los botones de acción */
+}
+
+.actions {
+  display: flex;
+  /* Mostrar los botones de acción en línea */
+  justify-content: flex-end;
+  /* Alinear los botones de acción a la derecha */
+  align-items: center;
+  /* Alinear verticalmente los botones de acción */
+}
+
+
+/* FApencil  *************************************/
+.patent-item,
+.user-item {
+  display: flex;
+  /* Utilizar flexbox para organizar los elementos en una fila */
+  justify-content: space-between;
+  /* Alinear los elementos con espacio entre ellos */
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.actions .btn-primary svg,
+.actions .btn-danger svg {
+  font-size: 24px;
+  /* Tamaño de fuente más grande para los iconos */
+}
+
+.patent-item h3 {
+  margin-bottom: 5px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  /* Alinear los elementos verticalmente en el centro */
+}
+
+.actions button {
+  margin-left: 5px;
+}
+
+.btnNewPatent {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnNewPatent:hover {
+  background-color: #218838;
+}
+
+.hamburguesa {
+  background-color: transparent;
+  color: #dee2e6;
+  border: none;
+}

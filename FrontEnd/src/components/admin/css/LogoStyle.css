@@ -1,0 +1,13 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo img {
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 80px;
+}

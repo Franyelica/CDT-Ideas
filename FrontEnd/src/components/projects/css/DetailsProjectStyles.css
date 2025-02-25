@@ -1,0 +1,55 @@
+.NewDetailsProject {
+    display: flex;
+    flex-direction: row;
+}
+
+.DetailsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(222, 213, 213, 0.413);
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 10%;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.category button {
+    width: 15rem;
+    padding: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(41, 51, 119, 1) 53%, rgba(64, 94, 171, 1) 100%);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    /*cursor: pointer;*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.BotonVolver {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .NewDetailsProject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .DetailsContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(222, 213, 213, 0.413);
+        width: 60%;
+        margin-left: -10%;
+        margin-right: 0%;
+    }
+
+}

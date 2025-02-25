@@ -1,0 +1,164 @@
+.Welcome {
+    width: 100%;
+    height: auto;
+    background: rgb(71, 79, 116);
+    background: linear-gradient(11deg, rgba(71, 79, 116, 1) 13%, rgba(62, 85, 164, 1) 100%);
+    color: white;
+}
+
+.Welcome h1 {
+    text-align: center;
+    color: white;
+}
+
+.displayFormUser {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para la ruta */
+.RouteUser {
+    margin-bottom: 20px;
+}
+
+.RouteUser ol {
+    list-style-type: none;
+}
+
+.RouteUser li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.RouteUser li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* EndSection */
+
+.ContainerFormU {
+    /*background-color: rgba(247, 237, 237, 0.584);*/
+    background-color: gainsboro;
+    width: 50%;
+    border-radius: 5px;
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+.inputU {
+    margin-bottom: 20px;
+}
+
+.inputU label {
+    display: block;
+    /* Hace que los labels ocupen todo el ancho */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-bottom: 5px;
+    /* Espacio entre el label y el input */
+}
+
+.inputU input,
+.inputU textarea {
+    width: 100%;
+    /* Ocupan todo el ancho disponible */
+    padding: 10px;
+    /* Espacio interno */
+    border: 1px solid #ccc;
+    /* Borde con color gris claro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    font-size: 14px;
+    /* Tamaño de fuente */
+}
+
+.inputU textarea {
+    resize: vertical;
+    /* Permite redimensionar verticalmente */
+}
+
+.inputU select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    /* Color de fondo */
+}
+
+.BtnCreateUser {
+    border-radius: 5px;
+    /* Bordes redondos de 5px para un aspecto más suave */
+    margin-left: 500px;
+    width: 200px;
+    height: 50px;
+    background-color: #4CAF50;
+    /* Color de fondo verde */
+    color: white;
+    /* Texto en blanco para mayor contraste */
+    padding: 8px 16px;
+    /* Espacio interno más reducido */
+    font-size: 14px;
+    /* Tamaño de fuente ligeramente más pequeño */
+    cursor: pointer;
+    /* Cambiar el puntero del ratón a una mano */
+    border: none;
+    /* Sin borde para un aspecto más limpio */
+    transition: background-color 0.3s;
+    /* Transición suave al pasar el ratón */
+}
+
+.BtnCreateUser:disabled {
+    background-color: #999;
+    /* Color de fondo gris claro cuando el botón está deshabilitado */
+    cursor: not-allowed;
+    /* Cambiar el puntero del ratón a una cruz cuando el botón está deshabilitado */
+}
+
+
+/* Usa una media query para ajustar el ancho y el alto del div cuando la pantalla sea menor de 500px */
+@media screen and (max-width: 1000px) {
+    .Welcome {
+        width: 100%;
+        height: auto;
+        background: rgb(71, 79, 116);
+        background: linear-gradient(11deg, rgba(71, 79, 116, 1) 13%, rgba(62, 85, 164, 1) 100%);
+        color: white;
+    }
+
+    .ContainerFormU {
+        width: 80%;
+        border-radius: 5px;
+        height: auto;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .BtnCreateUser {
+        border-radius: 5px;
+        /* Bordes redondos de 5px para un aspecto más suave */
+        margin-left: 150px;
+        width: 200px;
+        height: 50px;
+        background-color: #4CAF50;
+        /* Color de fondo verde */
+        color: white;
+        /* Texto en blanco para mayor contraste */
+        padding: 8px 16px;
+        /* Espacio interno más reducido */
+        font-size: 14px;
+        /* Tamaño de fuente ligeramente más pequeño */
+        cursor: pointer;
+        /* Cambiar el puntero del ratón a una mano */
+        border: none;
+        /* Sin borde para un aspecto más limpio */
+        transition: background-color 0.3s;
+        /* Transición suave al pasar el ratón */
+    }
+
+}

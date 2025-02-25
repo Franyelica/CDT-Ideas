@@ -1,0 +1,22 @@
+.SliderImg {
+    width: 60%;
+}
+
+.NewImage {
+    margin-left: 10%;
+    margin-right: 20px;
+    width: 85%;
+}
+
+@media screen and (max-width: 768px) {
+    .SliderImg {
+        width: 70%;
+    }
+
+    .NewImage {
+        margin-left: 0px;
+        margin-right: 10px;
+        width: 85%;
+    }
+
+}

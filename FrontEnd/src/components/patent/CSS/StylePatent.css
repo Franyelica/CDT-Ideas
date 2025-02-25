@@ -1,0 +1,106 @@
+
+
+/* Reducir el ancho de las .patent-card */
+.patent-card{
+  float: left;
+}
+.patent-card {
+  width: 18%;
+  height: auto;
+    /* Usar flexbox para alinear los elementos verticalmente */
+    margin: 10px;
+    margin-top: 50px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   
+  }
+
+  
+  /* Estilar la imagen */
+  .patent-image {
+    /* Hacer que la imagen ocupe todo el ancho */
+    width: 100%;
+    /* Ajustar la altura según el aspecto de la imagen */
+    height: 150px;
+    /* Ajustar la imagen al contenedor */
+    object-fit: cover;
+    /* Redondear el borde superior */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Estilar el contenido */
+  .patent-content {
+    /* Hacer que el contenido ocupe el espacio que sobra */
+    flex-grow: 1;
+    /* Añadir un poco de relleno */
+    padding: 20px;
+    /* Centrar el contenido horizontalmente */
+    text-align: center;
+  }
+  
+  /* Estilar el título */
+  .patent-title {
+    /* Usar una fuente más grande y negrita */
+    font-size: 24px;
+    font-weight: bold;
+    /* Añadir un poco de margen */
+    margin-bottom: 10px;
+  }
+  
+  /* Estilar el botón de categoría */
+  .patent-category {
+    /* Usar un color de fondo según la categoría */
+    /* background-color: ${patent.category === "Tecnología" ? "#00a0d2" : patent.category === "Salud" ? "#f15a29" : patent.category === "Educación" ? "#8dc63f" : "#ccc"}; */
+    /* Usar un color de texto blanco */
+    color: rgb(0, 0, 0);
+    /* Añadir un poco de relleno */
+    padding: 5px 10px;
+    /* Quitar el borde */
+    border: none;
+    /* Redondear los bordes */
+    border-radius: 5px;
+    /* Añadir un efecto de transición */
+    transition: transform 0.3s;
+  }
+  
+  /* Estilar el párrafo de descripción */
+  .patent-description {
+    /* Usar una fuente más pequeña y gris */
+    font-size: 14px;
+    color: #666;
+    /* Añadir un poco de margen */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilar el botón de más información */
+  .patent-info {
+    background: rgb(2,0,36);
+    background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(41,51,119,1) 53%, rgba(64,94,171,1) 100%);
+    /* Usar un color de texto blanco */
+    color: white;
+    /* Añadir un poco de relleno */
+    padding: 10px 20px;
+    /* Quitar el borde */
+    border: none;
+    /* Redondear los bordes */
+    border-radius: 10px;
+    /* Añadir un efecto de transición */
+    transition: transform 0.3s;
+  }
+  
+  /* Hacer que los botones se agranden al pasar el cursor */
+  .patent-category:hover, .patent-info:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive layout - cuando la pantalla es menor de 600px de ancho, hacer que las dos columnas se apilen una encima de otra en lugar de una al lado de la otra */
+@media screen and (max-width: 600px) {
+  .patent-card{
+    width: 90%;
+  }
+
+}

@@ -1,0 +1,206 @@
+.logo-link {
+  margin-right: 0;
+}
+
+nav {
+  gap: 0;
+}
+
+
+
+.UserCircle {
+  margin-right: 80px;
+  margin-bottom: -20px;
+}
+.user-button{
+  border: none;
+  background-color: transparent;
+  position: sticky;
+  top: 10px; /* distancia desde el borde inferior */
+  right: 10px;
+  /* margin-left: 20px; */
+}
+.dropdown-menu {
+
+  visibility: block; /* oculta el div */
+}
+
+.user-button:focus + .dropdown-menu {
+  visibility: visible; /* muestra el div cuando el botón tiene el foco */
+}
+
+.dropdown-item {
+  padding: 10px;
+}
+/* Menu de navegacion pequeño */
+.nav-cer {
+  display: none;
+}
+
+.nav-abi {
+display: block;
+display: flex;
+flex-direction: column;
+width: 200px;
+border: none;
+}
+.nav-abi a {
+  padding: 10px;
+}
+.close-buttonMin {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Fin de menu de navegacion  */
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+.header a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #293377;
+}
+
+.menu-button,
+.close-button {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-button {
+  display: none;
+}
+
+.close-button {
+  display: none;
+}
+
+/*estilos propios para la barra de navegación */
+
+
+
+.logo-link {
+  margin-right: auto;
+}
+
+.logo {
+  height: 100px;
+  /* Ajusta según sea necesario */
+}
+
+nav {
+  display: flex;
+  font-weight: bold;
+  gap: 20px;
+  /* Ajusta según sea necesario */
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.user-button {
+  font-weight: bold;
+  color: black;
+}
+
+.login-button {
+  background: rgb(2,0,36);
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(41,51,119,1) 53%, rgba(64,94,171,1) 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(41,51,119,1) 53%, rgba(64,94,171,1) 100%);
+  color: white;
+}
+
+.divider {
+  height: 1px;
+  background-color: gray;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav-cerrado {
+    display: none;
+  }
+
+  .nav-abierto {
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgb(116, 116, 247);*/
+    background-color: gainsboro;
+    z-index: 100;
+    width: 300px;
+    padding: 50px;
+
+  }
+
+  nav {
+    position: fixed;
+    /* Hacemos que la posición en pantalla sea fija */
+    left: 0;
+    /* Establecemos la barra en la izquierda */
+    top: 0;
+    /* Establecemos la barra en la parte superior */
+    height: 100%;
+    /* Hacemos que la barra ocupe todo el alto de la pantalla */
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button,
+  nav a {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+
+  }
+
+  .close-button {
+    display: block;
+  }
+  .logo-link {
+    display: none;
+  }
+
+  .logo-link {
+    margin-right: -100px;
+  }
+
+  .user-section {
+    display: block;
+    position: sticky;
+    right: 0;
+  }
+
+
+}
+
+
+

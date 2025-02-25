@@ -1,0 +1,67 @@
+.GeneralDash {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.CardDash {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--color);
+  color: white;
+  transition: transform 0.3s;
+  width: 20rem;
+  height: 100px;
+
+}
+
+.CardDash a {
+  margin-left: 10px;
+}
+
+.CardDash p {
+  margin-left: 10px;
+}
+
+.CardDash h3 {
+  margin-left: 10px;
+}
+
+.CardDash:hover {
+  transform: scale(1.05);
+}
+
+/* Puedes cambiar los colores de las tarjetas aquí */
+.CardDash:nth-child(1) {
+  --color: #ff6f61;
+}
+
+.CardDash:nth-child(2) {
+  --color: #6b5b95;
+}
+
+.CardDash:nth-child(3) {
+  --color: #88d8b0;
+}
+
+@media (max-width: 1000px) {
+  .GeneralDash {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    margin-left: 40px;
+  }
+
+  .CardDash {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color);
+    color: white;
+    transition: transform 0.3s;
+    width: 50%;
+    height: 120px;
+
+  }
+}

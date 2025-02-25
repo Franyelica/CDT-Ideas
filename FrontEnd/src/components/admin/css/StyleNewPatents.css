@@ -1,0 +1,146 @@
+.Hello {
+  width: 100%;
+  height: auto;
+  background: rgb(71, 79, 116);
+  background: linear-gradient(11deg, rgba(71, 79, 116, 1) 13%, rgba(62, 85, 164, 1) 100%);
+  color: white;
+  /* padding: 20px; */
+}
+
+.Hello h1 {
+  text-align: center;
+  color: white;
+}
+
+.displayForm {
+  width: 100%;
+  height: auto;
+}
+
+/* Section Route */
+.Route {
+  margin-bottom: 20px;
+}
+
+.Route ol {
+  list-style-type: none;
+}
+
+.Route li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.Route li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* EndSection  */
+
+.FormG {
+  width: auto;
+  /* padding: 2%; */
+  /* background-color: rgb(221, 217, 217); */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ContainerForm {
+
+  /*background-color: rgba(247, 237, 237, 0.584);*/
+  background-color: gainsboro;
+  width: 45%;
+  border-radius: 5px;
+  height: auto;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* .inputP label{
+  float: left;
+  margin-right: 10px;
+  color: black;
+  font-size: 20px;
+} */
+/* Estilos para los elementos de la clase .inputP */
+.inputP {
+  margin-bottom: 20px;
+  /* Espacio entre los elementos */
+}
+
+/* Estilos para los labels */
+.inputP label {
+  display: block;
+  /* Hace que los labels ocupen todo el ancho */
+  font-weight: bold;
+  /* Texto en negrita */
+  margin-bottom: 5px;
+  /* Espacio entre el label y el input */
+}
+
+/* Estilos para los inputs y textarea */
+.inputP input,
+.inputP textarea {
+  width: 100%;
+  /* Ocupan todo el ancho disponible */
+  padding: 10px;
+  /* Espacio interno */
+  border: 1px solid #ccc;
+  /* Borde con color gris claro */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  font-size: 14px;
+  /* Tamaño de fuente */
+}
+
+/* Estilos específicos para el textarea */
+.inputP textarea {
+  resize: vertical;
+  /* Permite redimensionar verticalmente */
+}
+
+/* Estilos para el select */
+.inputP select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  /* Color de fondo */
+}
+
+/* Cambia los colores y estilos según tus preferencias */
+
+
+
+.BtnCretePatent {
+  border-radius: 5px;
+  /* Bordes redondos de 5px para un aspecto más suave */
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  background-color: #4CAF50;
+  /* Color de fondo verde */
+  color: white;
+  /* Texto en blanco para mayor contraste */
+  padding: 8px 16px;
+  /* Espacio interno más reducido */
+  font-size: 14px;
+  /* Tamaño de fuente ligeramente más pequeño */
+  cursor: pointer;
+  /* Cambiar el puntero del ratón a una mano */
+  border: none;
+  /* Sin borde para un aspecto más limpio */
+  transition: background-color 0.3s;
+  /* Transición suave al pasar el ratón */
+}
+
+.BtnCretePatent:disabled {
+  background-color: #999;
+  /* Color de fondo gris claro cuando el botón está deshabilitado */
+  cursor: not-allowed;
+  /* Cambiar el puntero del ratón a una cruz cuando el botón está deshabilitado */
+}
