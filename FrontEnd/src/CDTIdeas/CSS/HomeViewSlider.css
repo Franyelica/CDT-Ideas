@@ -1,0 +1,60 @@
+.viewSliderProject {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*height: 300px;*/
+}
+
+.projectDescription {
+    width: 40%;
+    justify-content: space-between;
+}
+
+.project-Title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2D3073;
+    font-size: 25px;
+}
+
+.project-Desc {
+    margin-bottom: 20px;
+}
+
+.projectDescription a button {
+    width: 10rem;
+    padding: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(41, 51, 119, 1) 53%, rgba(64, 94, 171, 1) 100%);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.projectDescription a button:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(86deg, rgba(2, 0, 36, 1) 0%, rgba(41, 51, 119, 1) 53%, rgba(64, 94, 171, 1) 100%);
+    color: white;
+}
+
+
+/* Estilos para pantallas pequeñas (ejemplo: ancho máximo 768px) */
+@media screen and (max-width: 768px) {
+    .viewSliderProject {
+        width: 100%;
+        flex-direction: column;
+        /* Cambia a dirección de columna */
+        height: auto;
+        /* Ajusta la altura automáticamente */
+    }
+
+    .projectDescription {
+        width: 100%;
+        /* Ocupa el 100% del ancho disponible */
+        padding: 20px;
+        justify-content: space-between;
+    }
+}

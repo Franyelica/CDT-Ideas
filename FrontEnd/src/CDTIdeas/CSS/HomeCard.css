@@ -1,0 +1,75 @@
+.GeneralCardI {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    margin-top: -4px;
+    background-color:#293377;
+    opacity: 0.85;
+  }
+  
+  .info-box {
+    width: 28%; /* Reducir el ancho de las cajas */
+    height: 250px;
+    perspective: 1000px;
+    margin: 10px; /* Reducir el margen entre las cajas */
+    float: left;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .info-box__front,
+  .info-box__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+  }
+  
+  .info-box__front {
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-box__back p{
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .info-box__front img {
+    width: 100%; /* La imagen ocupa todo el ancho de la caja */
+    height: 100%; /* La imagen ocupa todo el alto de la caja */
+    object-fit: cover; /* Ajustar la imagen dentro de su contenedor */
+  }
+  
+  .info-box__back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-box:hover .info-box__front {
+    transform: rotateY(-180deg);
+  }
+  
+  .info-box:hover .info-box__back {
+    transform: rotateY(0deg);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .info-box {
+      width: 70%; /* Reducir el ancho de las cajas para permitir dos por fila */
+    }
+    .GeneralCardI {
+      display: flex;
+      flex-wrap: wrap; /* Para que las cajas se coloquen en filas */
+      justify-content: center;
+    }
+  }
+  

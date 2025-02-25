@@ -1,0 +1,102 @@
+/* Estilar el contenedor general */
+/* Style using for UpdatePassword, UpdateProfile, forgotPassword and userProfeile  */
+.Container-Generla {
+    width: 50%;
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+  .formU{
+    width: 100%;
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+  
+  /* Estilar el título de la página */
+  .TitlePerfil {
+    font-size: 36px; /* Usar una fuente grande */
+    font-weight: bold; /* Usar una fuente negrita */
+    color: white; /* Usar un color de texto blanco */
+    background-color: #405EAB; /* Usar un color de fondo azul */
+    padding: 20px; /* Añadir un poco de relleno */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  /* Estilar el contenedor del perfil */
+  .Profil {
+    width: 50%; /* Usar el 50% del ancho del contenedor general */
+    margin: 20px auto; /* Añadir un poco de margen y centrar el contenedor */
+    border: 1px solid #ccc; /* Añadir un borde sutil */
+    border-radius: 10px; /* Redondear los bordes */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Añadir un poco de sombra */
+    padding: 20px; /* Añadir un poco de relleno */
+  }
+  
+  /* Estilar los títulos del perfil */
+  .Profil h4 {
+    font-size: 18px; /* Usar una fuente mediana */
+    font-weight: normal; /* Usar una fuente normal */
+    color: #666; /* Usar un color de texto gris */
+    margin-bottom: 5px; /* Añadir un poco de margen inferior */
+  }
+  
+  /* Estilar los párrafos del perfil */
+  .Profil p {
+    font-size: 16px; /* Usar una fuente pequeña */
+    color: #333; /* Usar un color de texto negro */
+    margin-bottom: 10px; /* Añadir un poco de margen inferior */
+  }
+  
+  /* Estilar los botones del perfil */
+  .Profil a, .btnUP {
+    display: inline-block; /* Hacer que los botones sean elementos en línea con bloque */
+    font-size: 14px; /* Usar una fuente pequeña */
+    color: white; /* Usar un color de texto blanco */
+    background-color: #405EAB; /* Usar un color de fondo azul */
+    padding: 10px 20px; /* Añadir un poco de relleno */
+    border: none; /* Quitar el borde */
+    border-radius: 5px; /* Redondear los bordes */
+    margin-right: 10px; /* Añadir un poco de margen derecho */
+    margin-bottom: 10px; /* Añadir un poco de margen inferior */
+    text-decoration: none; /* Quitar el subrayado */
+    transition: transform 0.3s; /* Añadir un efecto de transición */
+  }
+  .btnUP{
+    margin-top: 20px;
+  }
+  
+  /* Hacer que los botones se agranden al pasar el cursor */
+  .Profil a:hover {
+    transform: scale(1.1);
+  }
+  .CardUpdate input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Añadir media queries para hacer la página responsive */
+  
+  /* Para pantallas menores o iguales a 768px */
+  @media screen and (max-width: 768px) {
+    /* Reducir el tamaño de la fuente del título */
+    .TitlePerfil {
+      font-size: 24px;
+    }
+  
+    /* Reducir el ancho del contenedor del perfil */
+    .Profil {
+      width: 80%;
+    }
+  }
+  
+  /* Para pantallas menores o iguales a 480px */
+  @media screen and (max-width: 480px) {
+    /* Reducir el tamaño de la fuente de los elementos del perfil */
+    .Profil h4, .Profil p, .Profil a {
+      font-size: 12px;
+    }
+  
+    /* Reducir el relleno de los botones del perfil */
+    .Profil a {
+      padding: 5px 10px;
+    }
+  }
+  

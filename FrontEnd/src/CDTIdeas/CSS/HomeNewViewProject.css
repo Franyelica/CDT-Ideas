@@ -1,0 +1,144 @@
+.containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00a8ff;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #333333;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 10px;
+}
+
+.card-button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(41,51,119,1) 53%, rgba(64,94,171,1) 100%);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.card-button a button:hover{
+  background: rgb(2,0,36);
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(41,51,119,1) 53%, rgba(64,94,171,1) 100%);
+}
+
+/*Espacio de invitacion a subscripcion */
+.invitation {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.invitation h1 {
+  color: #00f;
+  text-align: center;
+}
+
+.invitation p {
+  color: #333;
+  font-size: 16px;
+}
+
+.invitation form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.invitation input {
+  width: 40%;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.invitation button {
+  width: 20%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #00f;
+  color: #fff;
+}
+
+
+/* Media query para pantallas más pequeñas (como teléfonos móviles) */
+@media (max-width: 768px) {
+
+  /*Para el contenido de proyectos*/
+  .containerCard {
+    flex-direction: column;
+    /* Cambia la dirección a columna */
+    align-items: stretch;
+    /* Asegura que los elementos se estiren en la columna */
+    padding: 0px;
+  }
+
+  .card {
+    width: 90%;
+    /* Hacer que la tarjeta ocupe todo el ancho disponible */
+  }
+
+  /*Para la suscripcion*/
+  .invitation {
+    width: 100%;
+  }
+
+  .invitation form {
+    flex-direction: column;
+  }
+
+  .invitation input {
+    width: 90%;
+  }
+
+  .invitation button {
+    width: 40%;
+  }
+}

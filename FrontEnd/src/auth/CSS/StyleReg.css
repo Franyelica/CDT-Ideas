@@ -1,0 +1,145 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+} */
+
+.background-container {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  /* Establece un índice z bajo para que esté en el fondo */
+  background-image: url("https://images.pexels.com/photos/4929607/pexels-photo-4929607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+  background-position: center center;
+  /* Centra la imagen tanto horizontal como verticalmente */
+}
+
+.form-group input{
+  width: 80%;
+  height: 30px;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.form-groupCheck{
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ImgLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.LogoRegistro {
+  width: 100px;
+  /* Ajusta el tamaño según lo desees */
+  height: auto;
+  /* Para mantener la proporción de la imagen */
+}
+
+/* Para el boton de x */
+.RegVolverI {
+  display: block;
+  /* Hace que el enlace sea un bloque para ocupar toda la anchura disponible */
+  position: absolute;
+  /* Lo posiciona de manera absoluta */
+  top: 10px;
+  /* Ajusta la distancia desde el borde superior */
+  right: 10px;
+  /* Ajusta la distancia desde el borde derecho */
+  text-decoration: none;
+  /* Elimina la subrayado predeterminado del enlace */
+  padding: 10px 20px;
+  /* Añade espacio alrededor del texto */
+
+  /* Color de fondo del botón */
+  color: #000000;
+  /* Color del texto */
+  border: none;
+  /* Elimina el borde */
+  border-radius: 100%;
+  /* Añade bordes redondos */
+}
+
+/* end el boton de x */
+
+.RegistrationContainer {
+  /* background-image: url(""); */
+  background-color: #ffffffa5;
+  padding: 20px;
+  margin-left: 25%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10%;
+  width: 45%;
+}
+
+.H3Regis {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.FormRegistration .form-group {
+  margin-bottom: 15px;
+}
+
+.FormReg {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.FormRegistration{
+  border-color: transparent;
+}
+
+.btn-submit {
+  width: 80%;
+  height: 40px;
+  margin-left: 10%;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+
+}
+
+.FormRegistration button {
+  background: rgb(2,0,36);
+background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(41,51,119,1) 53%, rgba(64,94,171,1) 100%);
+}
+.FormRegistration  button:hover {
+  background: rgb(2,0,36);
+background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(41,51,119,1) 53%, rgba(64,94,171,1) 100%);
+}
+
+.btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.haveAccount {
+  text-align: center;
+}
+
+  @media screen and (max-width: 768px) {
+    .RegistrationContainer {
+      width: 90%;
+      text-align: center;
+      margin-left: 5%;
+    }
+  }
+  

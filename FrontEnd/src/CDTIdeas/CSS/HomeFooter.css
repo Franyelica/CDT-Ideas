@@ -1,0 +1,19 @@
+footer {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 13%, rgba(146,149,201,1) 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces dentro del footer */
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para el texto de derechos de autor */
+.copyright {
+    font-size: 14px;
+    color: black;
+}
