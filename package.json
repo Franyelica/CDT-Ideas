@@ -1,0 +1,40 @@
+{
+  "name": "cdt-dev",
+  "version": "1.0.0",
+  "description": "cdt-dev-page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
+    "seeder": "node backend/utils/seeder.js",
+    "heroku:postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "sidevsoft",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^5.15.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.37.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "icons": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "nodemailer": "^6.9.0",
+    "promise": "^8.3.0",
+    "react": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.3",
+    "react-slick": "^0.30.2",
+    "react-tinder-card": "^1.6.2",
+    "slick-carousel": "^1.8.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
